@@ -19,15 +19,15 @@ popupAddCat.close();
   //api.deleteCatById(cat.id);
 //}
 
-cats.forEach((cat) =>createCat(cat));
+//cats.forEach((cat) =>createCat(cat));
 
 btnOpenPopupForm.addEventListener('click', () => popupAddCat.open());
 formAddCat.addEventListener('submit', handFormAddCat);
 
-//api.getAllCats().then((data) => 
-//data.forEach((cat) =>{
-//  createCat(cat);
+api.getAllCats().then((data) => 
+data.forEach((cat) =>{
+createCat(cat);
   //const btnDelete = document.addEventListener('click', () => 
  // deleteCat(cat));
-//}));
+ }));
 
